@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox fx:id="hBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="100.0" minWidth="300.0" prefHeight="500.0" prefWidth="700.0" stylesheets="@palette.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.createWordListPageController">
+    <children>
+        <AnchorPane fx:id="anchorPane1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="500.0" prefWidth="367.0">
+            <children>
+                <JFXTextField fx:id="initialField" layoutX="58.0" layoutY="124.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="42.0" prefWidth="269.0" />
+                <JFXButton fx:id="translateToLanguageButton" layoutX="6.0" layoutY="182.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" onAction="#translateToLanguage" text="Translate to Language" />
+                <Label layoutX="167.0" layoutY="88.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" text="Initial" />
+                <JFXButton defaultButton="true" layoutX="111.0" layoutY="219.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" onAction="#addWord" prefHeight="62.0" prefWidth="166.0" text="Add Word" />
+                <JFXButton layoutX="163.0" layoutY="182.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" onAction="#translateToEnglish" text="Translate to English" />
+                <JFXButton layoutX="311.0" layoutY="182.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" onAction="#clear" text="Clear" />
+                <MenuBar layoutY="-2.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="32.0" prefWidth="367.0">
+                    <menus>
+                        <Menu mnemonicParsing="false" text="File">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#goBack" text="Go Back" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Help">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="About" />
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="anchorPane2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="500.0" prefWidth="334.0">
+            <children>
+                <Label layoutX="120.0" layoutY="90.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" text="Translation" />
+                <Label layoutX="152.0" layoutY="232.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" text="IPA" />
+                <JFXButton fx:id="endSessionButton" layoutX="38.0" layoutY="348.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" onAction="#endSession" prefHeight="106.0" prefWidth="259.0" text="End Session" />
+                <JFXTextField fx:id="translationField" layoutX="33.0" layoutY="125.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="42.0" prefWidth="269.0" />
+                <JFXTextField fx:id="IPAField" layoutX="33.0" layoutY="270.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="42.0" prefWidth="269.0" />
+                <JFXButton layoutX="133.0" layoutY="178.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" onAction="#toIPA" text="Get IPA" />
+                <Hyperlink fx:id="myHyperLink" layoutX="125.0" layoutY="312.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" onAction="#sendToIPAWebsite" text="IPA Website" />
+            </children>
+        </AnchorPane>
+    </children>
+</HBox>
