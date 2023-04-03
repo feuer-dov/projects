@@ -1,2 +1,1 @@
-Below is a lofi wireframe for a university social media app.
-![[University Social Media App Wireframe.pdf]]
+This project contains a PDF of a lofi wireframe for a university social media app.
