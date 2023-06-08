@@ -1,0 +1,35 @@
+
+h1{
+  color: royalblue;
+}
+form{
+  color: blue;
+}
+h2{
+  color: red;
+  padding-top: 20px;
+  font-weight: bold;
+}
+button {
+  /* Background color */
+  background-color: black;
+  
+  /* Text color */
+  color: white;
+  
+  /* Padding */
+  padding: 10px 20px;
+  
+  /* Border */
+  border: red;
+  
+  /* Border radius */
+  border-radius: 20px;
+  
+  /* Hover effect */
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: blue;
+}
