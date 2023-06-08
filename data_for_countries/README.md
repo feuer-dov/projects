@@ -1,6 +1,6 @@
 # Data For Countries React App
 
-# Description
+## Description
 This is a very basic React app in which you search for a country, the country's data is accessed using two APIs, and the data is displayed.
 
 ## Usage
